@@ -7,10 +7,15 @@ Automates marketing lead intake from any web form into a Google Sheet and instan
 - Sends an HTML-formatted Telegram message with all lead context, including company, service, budget, and optional message.
 - Includes detailed logging/Dashboard screenshots so you can demonstrate deployment and monitoring in your portfolio.
 
-## Tech stack
-- Google Apps Script (JavaScript variant inside `src/`)
-- Google Sheets (data store)
-- Telegram Bot API (notification channel)
+## 🛠 Tech Stack
+- Google Apps Script
+- Webflow Webhooks
+- Telegram Bot API
+- Google Sheets
+- Postman (testing)
+
+## Story
+This automation was built for a digital marketing agency in Poland to eliminate manual lead handling and accelerate response time from minutes to seconds.
 
 ## Getting started
 1. **Create credentials**
@@ -30,6 +35,13 @@ Automates marketing lead intake from any web form into a Google Sheet and instan
 ## Workflow
 Leads hit the webhook, the script logs everything, appends a row in Google Sheets, and posts a Telegram notification with a bolded headline plus field labels so the message is human-friendly. Any missing fields fall back to `N/A` and the raw Telegram response is returned via the webhook for debugging.
 
+## How It Works
+1. A user submits a form on Webflow.
+2. Webflow triggers a webhook and sends JSON to Google Apps Script.
+3. The Apps Script parses, validates and stores data in Google Sheets.
+4. The script generates a formatted HTML message.
+5. Telegram bot sends instant notification to the marketing team.
+
 ## Screenshots
 - Webhook deployment preview: ![deployment screenshot](screenshots/webhook.png)
 - Source code context (part 1): ![webhook code](screenshots/webhook_code_1.png)
@@ -37,3 +49,30 @@ Leads hit the webhook, the script logs everything, appends a row in Google Sheet
 - Google Sheet CRM view: ![Sheet view](screenshots/google_sheet_crm.png)
 - Telegram message example: ![Telegram message](screenshots/telegram_message.png)
 - Telegram API response log: ![Telegram response](screenshots/telegram_response.png)
+
+## 📦 Deployment
+1. Deploy as Web App
+   - Apps Script → Deploy → New Deployment → Web App
+   - Execute as: Me
+   - Who has access: Anyone
+   - Copy the URL into Webflow Webhook settings.
+
+## 🛡️ Privacy Notice
+This project uses synthetic lead data generated for testing.
+No real customer data is exposed in screenshots or examples.
+
+## 📘 License
+MIT License. Free for use in portfolio and personal projects.
+
+## 🎯 Summary
+This automation helps agencies:
+
+- Speed up lead processing
+- Eliminate manual data entry
+- Centralize submissions in a CRM
+- Respond instantly via Telegram
+- Avoid losing inbound leads
+
+## 👨‍💻 Author
+Arseniy Ostroumov  
+Automation Engineer • Google Apps Script • Integrations • Webhooks • Telegram Bots
