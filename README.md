@@ -50,13 +50,6 @@ Leads hit the webhook, the script logs everything, appends a row in Google Sheet
 - Telegram message example: ![Telegram message](screenshots/telegram_message.png)
 - Telegram API response log: ![Telegram response](screenshots/telegram_response.png)
 
-## 📦 Deployment
-1. Deploy as Web App
-   - Apps Script → Deploy → New Deployment → Web App
-   - Execute as: Me
-   - Who has access: Anyone
-   - Copy the URL into Webflow Webhook settings.
-
 ## 🛡️ Privacy Notice
 This project uses synthetic lead data generated for testing.
 No real customer data is exposed in screenshots or examples.
