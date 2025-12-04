@@ -43,6 +43,7 @@ Leads hit the webhook, the script logs everything, appends a row in Google Sheet
 5. Telegram bot sends instant notification to the marketing team.
 
 ## Screenshots
+- Architecture overview: ![architecture](screenshots/arch.png)
 - Webhook deployment preview: ![deployment screenshot](screenshots/webhook.png)
 - Source code context (part 1): ![webhook code](screenshots/webhook_code_1.png)
 - Source code context (part 2): ![webhook code](screenshots/webhook_code_2.png)
