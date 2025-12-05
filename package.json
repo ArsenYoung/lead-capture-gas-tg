@@ -1,0 +1,14 @@
+{
+  "name": "lead-capture-gas-tg",
+  "version": "0.1.0",
+  "description": "Google Apps Script lead capture webhook with Telegram alerts",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "push": "npx clasp push",
+    "deploy": "node scripts/deploy.js"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.5.0"
+  }
+}
